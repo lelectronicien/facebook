@@ -1,0 +1,26 @@
+//custom bootstrap
+
+$h1-font-size: 4rem;
+
+$h6-font-size: 0.8rem;
+
+.bg-gray {
+    background-color: #f0f2f5;
+  }
+@media (min-width : 62em) {
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%
+    }
+}
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+//import MDB stylesheet
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+// Import all of Bootstrap's icons
+@import "~bootstrap-icons/font/bootstrap-icons.css";

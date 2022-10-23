@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>Facebook</title>
+  </head>
+  <body class="bg-gray">
+    <!---------------------- login -->
+    <div
+      class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5"
+    >
+      <!----------------------heading -->
+      <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bold fs-1">Facebook</h1>
+        <p class="w-75 mx-auto mx-lg-0 fs-4">
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+      <!----------------------form -->
+      <div style="max-width: 28rem; width: 100%">
+        <div class="bg-white shadow rounded p-3 input-group-lg">
+          <input
+            type="email"
+            class="form-control my-3"
+            placeholder="Email adress or phone number"
+          />
+
+          <input
+            type="password"
+            class="form-control my-3"
+            placeholder="Password"
+          />
+
+          <a href="feed.html">
+            <button class="btn btn-primary w-100 my-3">Log In</button>
+          </a>
+
+          <a href="" class="text-decoration-none text-center">
+            <p>Forgotten password ?</p>
+          </a>
+          <!--create form button-->
+          <hr />
+          <div class="text-center my-4">
+            <button
+              type="button"
+              class="btn btn-success btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#facebookmodal"
+            >
+              Create a new account
+            </button>
+          </div>
+        </div>
+
+      
+
+        <!-- Modal form -->
+        <div
+          class="modal fade"
+          id="facebookmodal"
+          tabindex="-1"
+          aria-labelledby="facebookmodalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- modal form header -->
+              <div class="modal-header">
+                <div>
+                  <h2 class="modal-title" id="facebookmodalLabel">Sign Up</h2>
+                  <p class="text-muted fs-6">It's quick and easy</p>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <!-- modal form body -->
+              <div class="modal-body">
+                <form action="">
+                  <!-- input for name -->
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                      />
+                    </div>
+                  </div>
+                  <!-- input email & password -->
+                  <input
+                    type="email"
+                    class="form-control my-3"
+                    placeholder="Mobile number or email adress"
+                  />
+                  <input
+                    type="password"
+                    class="form-control my-3"
+                    placeholder="New password"
+                  />
+                  <!-- Date of Birthday-->
+                  <div class="row my-3">
+                    <span class="text-muted fs-6"
+                      >Date of birth
+                      <i
+                        type="button"
+                        class="bi bi-question-circle-fill"
+                        data-bs-container="body"
+                        data-bs-toggle="popover"
+                        data-bs-placement="right"
+                        data-bs-content="lorem lipsum"
+                      ></i
+                    ></span>
+                    <div class="col">
+                      <select name="" id="" class="form-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="" id="" class="form-select">
+                        <option value="1">Janvier</option>
+                        <option value="2">Fevrier</option>
+                        <option value="3">Mars</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="" id="" class="form-select">
+                        <option value="1">2000</option>
+                        <option value="2">2001</option>
+                        <option value="3">2002</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- gender -->
+                  <div class="row my-3">
+                    <span class="text-muted fs-6"
+                      >Gender
+                      <i
+                        type="button"
+                        class="bi bi-question-circle-fill"
+                        data-bs-container="body"
+                        data-bs-toggle="popover"
+                        data-bs-placement="right"
+                        data-bs-content="lorem lipsum"
+                      ></i
+                    ></span>
+                    <div class="col">
+                      <div class="border rounded p-2">
+                        <label class="form-check-label" for="flexRadioq">
+                          M
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadio"
+                          id="flexRadio1"
+                          checked
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="border rounded p-2">
+                        <label class="form-check-label" for="flexRadio2">
+                          F
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadio"
+                          id="flexRadio2"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="border rounded p-2">
+                        <label class="form-check-label" for="flexRadio3">
+                          O
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadio"
+                          id="flexRadio3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- gender select -->
+                  <div class="d-none" id="genderSelect">
+                    <div class="my-3">
+                      <span class="text-muted"> Your pronoum is visible </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Gender (optional)"
+                      />
+                    </div>
+                  </div>
+                  <!-- disclainer -->
+                  <div>
+                    <span class="text-muted fs-6">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </span>
+                  </div>
+                  <!-- btn -->
+                  <div class="text-center mt-3">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-lg"
+                      data-bs-dismiss="modal"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- create modal end-->
+        <!-- tag -->
+        <div class="my-5 text-center">
+          <p class="fw-bold">
+            <a href="#" class="text-decoration-none text-dark">
+              Create a page
+            </a>
+            <span class="fw-normal">for celebrity, band or bussiness.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white text-muted pt-5">
+      <div class="container">
+        <!-- langauge -->
+        <div class="d-flex flex-wrap fs-6">
+          <div class="mx-2 fs-6 mb-0">English (US)</div>
+          <div class="mx-2 fs-6 mb-0">French (FR)</div>
+          <div class="mx-2 fs-6 mb-0">Espagnol (ES)</div>
+          <div class="mx-2 fs-6 mb-0">Italian (IT)</div>
+        </div>
+
+        <hr />
+        <!-- actions -->
+
+        <div class="d-flex flex-wrap fs-6">
+          <div class="mx-2 fs-6 mb-0">Sign Up</div>
+          <div class="mx-2 fs-6 mb-0">Login</div>
+          <div class="mx-2 fs-6 mb-0">Messenger</div>
+          <div class="mx-2 fs-6 mb-0">Facebook Lite</div>
+        </div>
+        <!-- copy -->
+        <div class="mt-4 mx-2">
+          <p class="fs-6">Facebook & Copy : 2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
+

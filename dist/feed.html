@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>Facebook</title>
+  </head>
+
+  <body class="bg-gray">
+    <!-- Appbar -->
+    <div
+      class="bg-white d-flex align-items-center fixed-top shadow"
+      style="min-height: 56px; z-index: 5"
+    >
+      <div class="container-fluid">
+        <div class="row align-itmes-center">
+          <!-- Search -->
+          <div class="col d-flex align-items-center">
+            <!-- logo -->
+            <i class="bi bi-facebook text-primary" style="font-size: 3rem"></i>
+            <!-- search bar -->
+            <div class="input-group ms-2">
+              <!-- mobile -->
+              <span
+                class="input-group-prepend d-lg-none"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-gray border-0 rounded-circle"
+                  style="min-height: 40px"
+                >
+                  <i class="bi bi-search text-muted"></i>
+                </div>
+              </span>
+              <!-- desktop -->
+              <span
+                class="input-group-prepend d-none d-lg-block"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-gray border-0 rounded-pill"
+                  style="min-height: 40px; min-width: 230px"
+                >
+                  <i class="bi bi-search me-2 text-muted"></i>
+                  <p class="m-0 fs-6 text-muted">Search Facebook</p>
+                </div>
+              </span>
+
+              <!-- search dropdown -->
+
+              <ul
+                class="dropdown-menu border-0 shadow p-3 overflow-auto align-items-center"
+                aria-labelledby="SearchMenu"
+                style="width: 20em; max-height: 600px"
+              >
+                <!-- search input -->
+                <li>
+                  <input
+                    type="text"
+                    class="rounded-pill border-0 bg-gray dropdown-item"
+                    placeholder="Search Facebook.."
+                    autofocus
+                  />
+                </li>
+                <!-- search results -->
+                <!-- results 1-->
+                <li class="my-4">
+                  <div
+                    class="alert d-flex align-items-center dropdown-item p-1 m-0 justify-content-between fade show"
+                    role="alert"
+                  >
+                    <div class="d-flex align-itmes-center">
+                      <img
+                        class="rounded-circle me-2"
+                        src="https://source.unsplash.com/random/1"
+                        alt="avatar"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem, ipsum dolor.</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- results 2-->
+                <li class="my-4">
+                  <div
+                    class="alert d-flex align-items-center dropdown-item p-1 m-0 justify-content-between fade show"
+                    role="alert"
+                  >
+                    <div class="d-flex align-itmes-center">
+                      <img
+                        class="rounded-circle me-2"
+                        src="https://source.unsplash.com/random/2"
+                        alt="avatar"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem, ipsum dolor.</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- results 3-->
+                <li class="my-4">
+                  <div
+                    class="alert d-flex align-items-center dropdown-item p-1 m-0 justify-content-between fade show"
+                    role="alert"
+                  >
+                    <div class="d-flex align-itmes-center">
+                      <img
+                        class="rounded-circle me-2"
+                        src="https://source.unsplash.com/random/3"
+                        alt="avatar"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem, ipsum dolor.</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+          <div class="col d-none d-lg-flex justify-content-center">
+            <!-- home -->
+            <div class="mx-4">
+              <button class="mt-2 border-0 bg-white">
+                <i class="bi bi-house-door-fill text-muted fs-4"></i>
+              </button>
+            </div>
+
+            <!-- markert -->
+            <div class="mx-4">
+              <button class="mt-2 border-0 bg-white">
+                <i class="bi bi-shop text-muted fs-4"></i>
+              </button>
+            </div>
+
+            <!-- group -->
+            <div class="mt-3">
+              <button type="button" class="btn-white position-relative border-0">
+                <i class="bi bi-people-fill fs-5"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                </span>
+              </button>
+            </div>
+            <!-- gaming -->
+          </div>
+          <!-- menu -->
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
